@@ -1,0 +1,11 @@
+davwheat:
+  spoilers-and-accordions:
+    forum:
+      post:
+        spoiler:
+          closed: Click to reveal
+          open: Click to hide
+        accordion:
+          tooltips:
+            closed: Click to reveal
+            open: Click to hide

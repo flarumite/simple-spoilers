@@ -1,0 +1,73 @@
+.davwheat-spoiler {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+
+  // If we have embedded spoilers, add border to make it obvious
+  & &.davwheat-spoiler {
+    border: #000 1px solid;
+  }
+
+  summary {
+    cursor: pointer;
+
+    // Remove the little arrow which shows
+    list-style: none;
+
+    // Chrome is a pain in the backside and
+    // likes making it's own dumb standards
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    .Button();
+
+    width: 100%;
+  }
+
+  &[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .davwheat-spoiler--title {
+    .davwheat-spoiler--default-text {
+      display: none;
+    }
+
+    .davwheat-spoiler--custom-text:empty {
+      display: none;
+
+      ~ .davwheat-spoiler--default-text {
+        display: inline;
+      }
+    }
+  }
+
+  .davwheat-spoiler--title-open {
+    display: none;
+  }
+
+  // Automatically change between text when expanded/hidden
+  &[open] {
+    .davwheat-spoiler--title-closed {
+      display: none;
+    }
+
+    .davwheat-spoiler--title-open {
+      display: inline;
+    }
+  }
+
+  .davwheat-spoiler--content {
+    padding: 12px;
+
+    background: #ededed;
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.2) 0, transparent 4px);
+
+    // Remove paragarph spacing from last paragraph in spoiler
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
