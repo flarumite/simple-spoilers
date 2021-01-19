@@ -24,4 +24,4 @@ jobs:
         uses: creyD/prettier_action@v3.1
         with:
           dry: true
-          prettier_options: --check "**/*.{less,json,md,yml}"
+          prettier_options: --check **/*.{less,json,md,yml}
