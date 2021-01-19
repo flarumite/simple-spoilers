@@ -24,11 +24,11 @@
   "extra": {
     "flarum-extension": {
       "title": "Flarumite Simple Spoilers",
+      "category": "formatting",
       "icon": {
         "name": "far fa-window-maximize",
         "backgroundColor": "#008000",
-        "color": "#fff",
-        "category": "formatting"
+        "color": "#fff"
       }
     },
     "flagrow": {
