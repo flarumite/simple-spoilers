@@ -1,4 +1,7 @@
 js/src export-ignore
 .git* export-ignore
+docs export-ignore
 
 js/dist/*.js -diff
+
+* text eol=lf
