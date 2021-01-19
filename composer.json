@@ -1,6 +1,6 @@
 {
-  "name": "davwheat/spoilers-and-accordions",
-  "description": "Native HTML5 spoilers and accordions - no JS needed!",
+  "name": "flarumite/simple-spoilers",
+  "description": "BBCode spoilers (with custom title support) with pure HTML and CSS.",
   "keywords": [
     "flarum"
   ],
@@ -12,22 +12,23 @@
   "authors": [
     {
       "name": "David Wheatley",
-      "email": "hi@davwheat.dev",
+      "email": "hi@flarumite.dev",
       "role": "Developer"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Davwheat\\SpoilersAndAccordions\\": "src/"
+      "Flarumite\\SimpleSpoilers\\": "src/"
     }
   },
   "extra": {
     "flarum-extension": {
-      "title": "Spoilers and Accordions",
+      "title": "Flarumite Simple Spoilers",
       "icon": {
         "name": "far fa-window-maximize",
-        "backgroundColor": "#51c5dd",
-        "color": "#000"
+        "backgroundColor": "#008000",
+        "color": "#fff",
+        "category": "formatting"
       }
     },
     "flagrow": {

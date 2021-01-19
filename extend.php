@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of davwheat/spoilers-and-accordions.
+ * This file is part of flarumite/simple-spoilers.
  *
- * Copyright (c) 2021 David Wheatley.
+ * Copyright (c) 2021 Flarumite.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace Davwheat\SpoilersAndAccordions;
+namespace Flarumite\SimpleSpoilers;
 
 use Flarum\Extend;
 use s9e\TextFormatter\Configurator;
@@ -26,27 +26,29 @@ return [
         $translator = app(\Flarum\Locale\Translator::class);
 
         $configurator->BBCodes->addCustom(
+            // TEXT = spoiler content
+            // TEXT2 = spoiler title (optional)
             '[spoiler title={TEXT2;optional}]{TEXT}[/spoiler]',
-            '<details class="davwheat-spoiler">
+            '<details class="flarumite-spoiler">
                 <summary>
-                    <span class="davwheat-spoiler--title davwheat-spoiler--title-closed">
-                        <span class="davwheat-spoiler--custom-text">
+                    <span class="flarumite-spoiler--title flarumite-spoiler--title-closed">
+                        <span class="flarumite-spoiler--custom-text">
                             {TEXT2}
                         </span>
-                        <span class="davwheat-spoiler--default-text">
-                            ' . $translator->trans('davwheat.spoilers-and-accordions.forum.post.spoiler.closed') . '
+                        <span class="flarumite-spoiler--default-text">
+                            ' . $translator->trans('flarumite.spoilers-and-accordions.forum.post.spoiler.closed') . '
                         </span>
                     </span>
-                    <span class="davwheat-spoiler--title davwheat-spoiler--title-open">
-                        <span class="davwheat-spoiler--custom-text">
+                    <span class="flarumite-spoiler--title flarumite-spoiler--title-open">
+                        <span class="flarumite-spoiler--custom-text">
                             {TEXT2}
                         </span>
-                        <span class="davwheat-spoiler--default-text">
-                            ' . $translator->trans('davwheat.spoilers-and-accordions.forum.post.spoiler.open') . '
+                        <span class="flarumite-spoiler--default-text">
+                            ' . $translator->trans('flarumite.spoilers-and-accordions.forum.post.spoiler.open') . '
                         </span>
                     </span>
                 </summary>
-                <div class="davwheat-spoiler--content">
+                <div class="flarumite-spoiler--content">
                     {TEXT}
                 </div>
             </details>'
