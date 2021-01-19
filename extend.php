@@ -14,12 +14,8 @@ namespace Davwheat\SpoilersAndAccordions;
 use Flarum\Extend;
 use s9e\TextFormatter\Configurator;
 
-
-
-
 return [
     (new Extend\Frontend('forum'))
-        //     ->js(__DIR__ . '/js/dist/forum.js')
         ->css(__DIR__ . '/resources/less/forum.less'),
 
     // Add locales
@@ -55,22 +51,5 @@ return [
                 </div>
             </details>'
         );
-
-        // $configurator->BBCodes->addCustom(
-        //     '[spoiler={TEXTTITLE}]{TEXT}[/spoiler]',
-        //     '<details class="davwheat-accordion">
-        //         <summary>
-        //             <span class="davwheat-accordion--title davwheat-accordion--title-closed" title="' . $translator->trans('davwheat.spoilers-and-accordions.forum.post.accordion.tooltip.closed') . '">
-        //                 {TEXTTITLE}
-        //             </span>
-        //             <span class="davwheat-accordion--title davwheat-accordion--title-open" title="' . $translator->trans('davwheat.spoilers-and-accordions.forum.post.accordion.tooltip.open') . '">
-        //                 {TEXTTITLE}
-        //             </span>
-        //         </summary>
-        //         <div class="davwheat-accordion--content">
-        //             {TEXT}
-        //         </div>
-        //     </details>'
-        // );
     }),
 ];
