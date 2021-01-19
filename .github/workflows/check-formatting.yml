@@ -1,0 +1,27 @@
+name: Smoketest
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-formatting:
+    runs-on: ubuntu-latest
+    name: Check formatting with Prettier
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+          prettier_options: --check "**/*.{less,json,md}"
+
+      - name: Prettify code
+        uses: creyD/prettier_action@v3.1
+        with:
+          dry: true
