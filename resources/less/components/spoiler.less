@@ -5,9 +5,13 @@
 
   // If we have spoilers within spoilers, add border to make it obvious
   & > .flarumite-spoiler--content > &[open] {
-    @flarumite-spoiler--embedded-border-color: #ccc;
-    & when (@config-dark-mode = true) {
-      @flarumite-spoiler--embedded-border-color: #666;
+    .setBorderColor();
+
+    .setBorderColor() when (@config-dark-mode = true) {
+      @flarumite-spoiler--embedded-border-color: #555;
+    }
+    .setBorderColor() when (@config-dark-mode = false) {
+      @flarumite-spoiler--embedded-border-color: #ccc;
     }
 
     > summary {
@@ -18,11 +22,16 @@
     > .flarumite-spoiler--content {
       border: 1px solid @flarumite-spoiler--embedded-border-color;
       border-top: none;
+
+      // Match BR of toggle
+      border-bottom-left-radius: @border-radius;
+      border-bottom-right-radius: @border-radius;
     }
   }
 
   summary {
     cursor: pointer;
+    color: @control-color;
 
     // Remove the little arrow which shows
     list-style: none;
@@ -75,14 +84,19 @@
   .flarumite-spoiler--content {
     padding: 12px;
 
-    background: #fcfcfc;
+    background: @control-bg;
 
     // add shadow effect
-    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.2) 0, transparent 4px);
 
-    & when (@config-dark-mode = true) {
-      background: #212121;
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0, transparent 4px);
+    .setShadow();
+
+    .setShadow() when (@config-dark-mode = false) {
+      background-image: linear-gradient(to bottom, fade(@shadow-color, 20%) 0, transparent 4px);
+    }
+
+    .setShadow() when (@config-dark-mode = true) {
+      // background: @control-bg;
+      background-image: linear-gradient(to bottom, fade(@shadow-color, 20%) 0, transparent 4px);
     }
 
     // Remove spacing from last paragraph in spoiler
