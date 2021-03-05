@@ -10,6 +10,10 @@ Supports [FriendsOfFlarum's Night Mode](https://github.com/friendsofflarum/night
 
 As this extension uses the [`<details>` and `<summary>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details), this extension is [incompatible with Internet Explorer](https://caniuse.com/details). IE has approximately 1% of market share in the modern world, and many websites are beginning to drop support for it.
 
+<p align="center">
+<img src="https://caniuse.bitsofco.de/image/details.png">
+</p>
+
 ### Installation
 
 Install with composer:
@@ -60,6 +64,6 @@ Some content
 
 ### Links
 
-- [Packagist](https://packagist.org/packages/flarumite/spoilers-and-accordions)
+- [Packagist](https://packagist.org/packages/flarumite/simple-spoilers)
 - [GitHub](https://github.com/flarumite/simple-spoilers)
 - [Discuss](https://github.com/flarumite/simple-spoilers)
