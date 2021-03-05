@@ -45,7 +45,7 @@ Spoilers are available in two versions: normal and customised title. The normal 
 [spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/normal.gif?raw=true)
 
-```
+```md
 [spoiler]
 Some content
 [/spoiler]
@@ -57,9 +57,32 @@ Some content
 [spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/custom-title.gif?raw=true)
 
-```
+```md
 [spoiler title=My cool title]
 Some content
+[/spoiler]
+```
+[/spoiler]
+
+#### Spoiler-ception!
+
+Putting spoilers inside spoilers even works!
+
+[spoiler]
+![](https://github.com/flarumite/simple-spoilers/blob/main/docs/embedded.png?raw=true)
+
+```md
+[spoiler]
+test
+[spoiler]
+embedded
+[spoiler]
+embedded
+[spoiler]
+embedded
+[/spoiler]
+[/spoiler]
+[/spoiler]
 [/spoiler]
 ```
 [/spoiler]
