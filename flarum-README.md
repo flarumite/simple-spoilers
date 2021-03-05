@@ -18,9 +18,9 @@ Supports [FriendsOfFlarum's Night Mode](https://github.com/friendsofflarum/night
 
 As this extension uses the [`<details>` and `<summary>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details), this extension is [incompatible with Internet Explorer](https://caniuse.com/details). IE has approximately 1% of market share in the modern world, and many websites are beginning to drop support for it.
 
-<p align="center">
-<img src="https://caniuse.bitsofco.de/image/details.png">
-</p>
+[center]
+![](https://caniuse.bitsofco.de/image/details.png)
+[/center]
 
 ### Installation
 
@@ -42,9 +42,7 @@ Spoilers are available in two versions: normal and customised title. The normal 
 
 #### Normal spoiler
 
-<details>
-<summary>Click to show</summary>
-
+[spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/normal.gif?raw=true)
 
 ```
@@ -52,14 +50,11 @@ Spoilers are available in two versions: normal and customised title. The normal 
 Some content
 [/spoiler]
 ```
-
-</details>
+[/spoiler]
 
 #### Spoiler with custom title
 
-<details>
-<summary>Click to show</summary>
-
+[spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/custom-title.gif?raw=true)
 
 ```
@@ -67,8 +62,7 @@ Some content
 Some content
 [/spoiler]
 ```
-
-</details>
+[/spoiler]
 
 ### Links
 
