@@ -2,7 +2,10 @@
   "name": "flarumite/simple-spoilers",
   "description": "BBCode spoilers (with custom title support) with pure HTML and CSS.",
   "keywords": [
-    "flarum"
+    "flarum",
+    "spoiler",
+    "bbcode",
+    "html5"
   ],
   "type": "flarum-extension",
   "license": "MIT",
@@ -12,10 +15,15 @@
   "authors": [
     {
       "name": "David Wheatley",
-      "email": "hi@flarumite.dev",
+      "email": "flarumite@davwheat.dev",
       "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/flarumite/simple-spoilers/issues",
+    "source": "https://github.com/flarumite/simple-spoilers",
+    "forum": "https://discuss.flarum.org/"
+  },
   "autoload": {
     "psr-4": {
       "Flarumite\\SimpleSpoilers\\": "src/"
