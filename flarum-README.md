@@ -27,13 +27,14 @@ As this extension uses the [`<details>` and `<summary>` elements](https://develo
 Install with composer:
 
 ```sh
-composer require flarumite/simple-spoilers
+composer require flarumite/simple-spoilers:"*"
 ```
 
 To update:
 
 ```sh
 composer update flarumite/simple-spoilers
+php flarum cache:clear
 ```
 
 ### Usage
