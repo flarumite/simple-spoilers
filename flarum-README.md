@@ -32,7 +32,7 @@ composer require flarumite/simple-spoilers:"*"
 To update:
 
 ```sh
-composer update flarumite/simple-spoilers
+composer update flarumite/simple-spoilers:"*"
 php flarum cache:clear
 ```
 
@@ -42,7 +42,6 @@ Spoilers are available in two versions: normal and customised title. The normal 
 
 #### Normal spoiler
 
-[spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/normal.gif?raw=true)
 
 ```md
@@ -51,11 +50,8 @@ Some content
 [/spoiler]
 ```
 
-[/spoiler]
-
 #### Spoiler with custom title
 
-[spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/custom-title.gif?raw=true)
 
 ```md
@@ -64,13 +60,10 @@ Some content
 [/spoiler]
 ```
 
-[/spoiler]
-
 #### Spoiler-ception!
 
 Putting spoilers inside spoilers even works!
 
-[spoiler]
 ![](https://github.com/flarumite/simple-spoilers/blob/main/docs/embedded.png?raw=true)
 
 ```md
@@ -88,10 +81,8 @@ embedded
 [/spoiler]
 ```
 
-[/spoiler]
-
 ### Links
 
 - [Packagist](https://packagist.org/packages/flarumite/simple-spoilers)
 - [GitHub](https://github.com/flarumite/simple-spoilers)
-- [Discuss](https://discuss.flarum.org/d/26366-flarumite-simple-spoilers-pure-html5-and-css)
+- [Discuss](https://github.com/flarumite/simple-spoilers)
