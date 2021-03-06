@@ -5,7 +5,7 @@
 - HTML5 only spoilers - no extra JS needed!
 - Works with [FriendsOfFlarum/nightmode](https://github.com/FriendsOfFlarum/nightmode)
 - Integrates with standard Flarum BBCode
-- Supports all modern browsers (no IE)
+- Supports all modern browsers (96.26% of web traffic)
 
 ---
 
@@ -15,7 +15,7 @@ Supports [FriendsOfFlarum's Night Mode](https://github.com/friendsofflarum/night
 
 ### Browser support
 
-As this extension uses the [`<details>` and `<summary>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details), this extension is [incompatible with Internet Explorer](https://caniuse.com/details). IE has approximately 1% of market share in the modern world, and many websites are beginning to drop support for it.
+As this extension uses the [`<details>` and `<summary>` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details), this extension is compatible with all modern browsers with 96.26% support for web traffic.
 
 [center]
 ![](https://caniuse.bitsofco.de/image/details.png)
