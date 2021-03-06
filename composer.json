@@ -22,7 +22,7 @@
   "support": {
     "issues": "https://github.com/flarumite/simple-spoilers/issues",
     "source": "https://github.com/flarumite/simple-spoilers",
-    "forum": "https://discuss.flarum.org/"
+    "forum": "https://discuss.flarum.org/d/26366"
   },
   "autoload": {
     "psr-4": {

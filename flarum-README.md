@@ -94,4 +94,4 @@ embedded
 
 - [Packagist](https://packagist.org/packages/flarumite/simple-spoilers)
 - [GitHub](https://github.com/flarumite/simple-spoilers)
-- [Discuss](https://github.com/flarumite/simple-spoilers)
+- [Discuss](https://discuss.flarum.org/d/26366-flarumite-simple-spoilers-pure-html5-and-css)
