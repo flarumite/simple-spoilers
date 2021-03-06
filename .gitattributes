@@ -3,5 +3,3 @@ js/src export-ignore
 docs export-ignore
 
 js/dist/*.js -diff
-
-* text eol=lf
