@@ -85,4 +85,4 @@ embedded
 
 - [Packagist](https://packagist.org/packages/flarumite/simple-spoilers)
 - [GitHub](https://github.com/flarumite/simple-spoilers)
-- [Discuss](https://github.com/flarumite/simple-spoilers)
+- [Discuss](https://flarum-badge-api.davwheat.dev/v1/compat-latest/flarumite/simple-spoilers)
